@@ -40,6 +40,7 @@ let producto5 = {
 
 function aplicarDescuento(producto, porcentaje) {
     // TODO: Implementar - Retornar el precio con descuento aplicado
+    // escribir todo mi codigo
 }
 
 function verificarDisponibilidad(producto, cantidad = 1) {
