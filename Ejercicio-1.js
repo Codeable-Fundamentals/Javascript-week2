@@ -52,6 +52,8 @@ function verificarDisponibilidad(producto, cantidad = 1) {
 
 function valorTotalInventario(producto) {
     // TODO: Implementar - Retornar precio * stock
+    let valorTotal = producto.precio * producto.stock;
+    return valorTotal;
 }
 
 // ===== CASOS DE PRUEBA =====
