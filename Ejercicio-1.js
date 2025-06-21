@@ -46,7 +46,7 @@ function aplicarDescuento(producto, porcentaje) {
 
 function verificarDisponibilidad(producto, cantidad = 1) {
     // TODO: Implementar - Retornar true si hay suficiente stock
-    let hayStock = producto.stock > cantidad;
+    let hayStock = producto.stock >= cantidad;
     return hayStock;
 }
 
