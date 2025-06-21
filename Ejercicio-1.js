@@ -40,6 +40,8 @@ let producto5 = {
 
 function aplicarDescuento(producto, porcentaje) {
     // TODO: Implementar - Retornar el precio con descuento aplicado
+    let precioDescontado = producto.precio * (100 - porcentaje)/100;
+    return precioDescontado;
 }
 
 function verificarDisponibilidad(producto, cantidad = 1) {
