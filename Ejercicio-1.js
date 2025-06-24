@@ -40,14 +40,24 @@ let producto5 = {
 
 function aplicarDescuento(producto, porcentaje) {
     // TODO: Implementar - Retornar el precio con descuento aplicado
+    this.producto = producto
+    this.porcentaje = porcentaje
+    porcentajeInterno = (producto.precio*porcentaje)/100
+    // console.log(porcentajeInterno)
+    return producto.precio - porcentajeInterno
 }
 
 function verificarDisponibilidad(producto, cantidad = 1) {
     // TODO: Implementar - Retornar true si hay suficiente stock
+    this.producto = producto
+    return producto.stock<cantidad?false:true
+
 }
 
 function valorTotalInventario(producto) {
     // TODO: Implementar - Retornar precio * stock
+    this.producto = producto
+    return producto.stock*producto.precio
 }
 
 // ===== CASOS DE PRUEBA =====
