@@ -2,7 +2,24 @@
 // Pedir palabra al usuario y contar cuántas vocales tiene
 // Vocales: a, e, i, o, u (considerar mayúsculas y minúsculas)
 //aqui implementacion
+const prompt = require("prompt-sync")();
 
+const word = prompt("Escribe una palabra: ");
+
+let counter = 0;
+for (let i = 0; i < word.length; i++) {
+  const letra = word[i].toLowerCase();
+  if (
+    letra === "a" ||
+    letra === "e" ||
+    letra === "i" ||
+    letra === "o" ||
+    letra === "u"
+  ) {
+    counter++;
+  }
+}
+console.log(`Tu palabra tiene: ${counter} vocales`);
 
 // Ejercicio: Verificar si un número es primo usando FOR
 // Un número primo solo es divisible por 1 y por sí mismo
@@ -12,7 +29,6 @@
 let numeros = [23, 45, 12, 67, 34, 89, 5, 78];
 // No uses Math.max(), hazlo con un bucle
 //aqui implementacion
-
 
 // Ejercicio: Verificar si una palabra es palíndromo usando FOR
 // Palíndromo se lee igual de izquierda a derecha y viceversa
