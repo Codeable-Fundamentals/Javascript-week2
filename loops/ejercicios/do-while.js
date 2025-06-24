@@ -1,2 +1,2 @@
 
-// Ejercicio: Pedir email hasta que contenga "@"
+// Ejercicio 7: Pedir email hasta que contenga "@"
