@@ -12,3 +12,4 @@ console.log("NUEVA CONDICIONAL");
 for (let contador = 3; contador <= 4; contador++) {
   console.log("valor de contador: ", contador);
 }
+
