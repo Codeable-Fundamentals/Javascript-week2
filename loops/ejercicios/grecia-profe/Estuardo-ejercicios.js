@@ -61,4 +61,4 @@ const prompt = require("prompt-sync")();
 // while (typeof numeroPositivo[contador] !== "undefined") {
 //   contador++;
 // }
-// console.log(`El número ${numero} tiene ${contador} dígitos`)
+// console.log(`El número ${numero} tiene ${contador} dígitos`
