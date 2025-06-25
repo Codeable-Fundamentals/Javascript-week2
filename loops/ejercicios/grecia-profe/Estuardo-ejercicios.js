@@ -62,3 +62,15 @@ const prompt = require("prompt-sync")();
 //   contador++;
 // }
 // console.log(`El número ${numero} tiene ${contador} dígitos`
+
+// Ejercicio 7: Pedir email hasta que contenga "@"
+// tip: pueden buscar como pedir inputs, desde la consola o "terminal" al usuario
+function pedirEmail() {
+    let email;
+    do {
+        email = prompt("Ingrese un email válido (debe contener @): ");
+    } while (!email.includes("@"));
+    return `El email válido ingresado es ${email}`;
+}
+
+console.log(pedirEmail())
