@@ -3,7 +3,7 @@ const prompt = require("prompt-sync")();
 // Un número primo solo es divisible por 1 y por sí mismo
 // function esPrimo() {
 //   let respuesta = +prompt("Ingrese un número: ");
-//   for (let i = 2; i < respuesta**(1/2); i++ ) {
+//   for (let i = 2; i <= respuesta**(1/2); i++ ) {
 //     if (respuesta % i === 0) {
 //       return `El número ${respuesta} no es primo`
 //     }
@@ -63,14 +63,14 @@ const prompt = require("prompt-sync")();
 // }
 // console.log(`El número ${numero} tiene ${contador} dígitos`
 
-// Ejercicio 7: Pedir email hasta que contenga "@"
-// tip: pueden buscar como pedir inputs, desde la consola o "terminal" al usuario
-function pedirEmail() {
-    let email;
-    do {
-        email = prompt("Ingrese un email válido (debe contener @): ");
-    } while (!email.includes("@"));
-    return `El email válido ingresado es ${email}`;
-}
+// // Ejercicio 7: Pedir email hasta que contenga "@"
+// // tip: pueden buscar como pedir inputs, desde la consola o "terminal" al usuario
+// function pedirEmail() {
+//     let email;
+//     do {
+//         email = prompt("Ingrese un email válido (debe contener @): ");
+//     } while (!email.includes("@"));
+//     return `El email válido ingresado es ${email}`;
+// }
 
-console.log(pedirEmail())
+// console.log(pedirEmail())
