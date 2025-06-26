@@ -12,7 +12,7 @@ let persona = {
   },
 };
 
-// Desestructuración del objeto persona
+// Desestructuración
 let { nombre, pais, trabajo, identidad, saludar } = persona;
 
 // console.log(typeof nombre, nombre); // "Sarah"
