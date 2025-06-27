@@ -14,29 +14,41 @@ const calculadora = {
    historial: [],
    
    sumar: function(a, b) {
+        this.historial.push(`${a} + ${b} = ${a+b}`);
+        return (a+b)
        // Calcula el resultado
        // Guarda en historial: "5 + 3 = 8"
        // Retorna el resultado
    },
    
    restar: function(a, b) {
-       // Tu código aquí
+       this.historial.push(`${a} - ${b} = ${a-b}`);
+        return (a-b)
    },
    
    multiplicar: function(a, b) {
-       // Tu código aquí
+       this.historial.push(`${a} x ${b} = ${a*b}`);
+        return (a*b)
    },
    
    dividir: function(a, b) {
-       // Tu código aquí (cuidado con división por 0)
+        if (b===0){
+            return "No se puede multiplicar entre 0"
+        } else{
+            this.historial.push(`${a} ÷ ${b} = ${a/b}`);
+            return (a/b) 
+        }
+        
    },
-   
    mostrarHistorial: function() {
-       // Tu código aquí
+        for (let x=0;x<this.historial.length;x++){
+            console.log (`${x+1}. ${this.historial[x]}`);
+        }
    },
    
    limpiarHistorial: function() {
-       // Tu código aquí
+        this.historial.splice(-this.historial.length);
+        console.log(`El historial limpio.`);
    }
 };
 

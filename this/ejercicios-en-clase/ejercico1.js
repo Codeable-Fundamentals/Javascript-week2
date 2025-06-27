@@ -9,6 +9,7 @@ const { serialize } = require("v8");
 // Agrega un método cumplirAnios() que incremente la edad en 1 y muestre: "[nombre] ahora tiene [edad] años"
 // Agrega un método cambiarEmail(nuevoEmail) que actualice el email
 
+
 // Código base:
 const usuario = {
     // Completa aquí
@@ -18,7 +19,7 @@ const usuario = {
     pais: "Peru",
     email: "Correo@amz.com",
     presentar(){
-        console.log(`Los datos del usuario son: ${this.nombre}`);
+        console.log(`Los datos del usuario son:`);
         console.log(`Nombre: ${this.nombre}`);
         console.log(`Apellido: ${this.apellido}`);
         console.log(`Edad: ${this.edad}`);
