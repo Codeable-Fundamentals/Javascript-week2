@@ -17,26 +17,47 @@ const calculadora = {
        // Calcula el resultado
        // Guarda en historial: "5 + 3 = 8"
        // Retorna el resultado
+        this.historial[this.historial.length] = a + b
+       return a + b
+
    },
    
    restar: function(a, b) {
        // Tu código aquí
+       this.historial[this.historial.length] = a - b
+       return a - b
    },
    
    multiplicar: function(a, b) {
        // Tu código aquí
+       this.historial[this.historial.length] = a * b
+       return a * b
    },
    
    dividir: function(a, b) {
        // Tu código aquí (cuidado con división por 0)
+       a / b
+       return  a / b
    },
    
    mostrarHistorial: function() {
-       // Tu código aquí
+
    },
-   
+
+   mostrarHistorial: function() {
+       if (this.historial.length === 0) {
+           console.log("Historial vacío");
+       } else {
+           console.log("Historial de operaciones:");
+           for (let i = 0; i < this.historial.length; i++) {
+               console.log(`${i + 1}. ${this.historial[i]}`);
+           }
+       }
+   },
+
    limpiarHistorial: function() {
-       // Tu código aquí
+       this.historial = []; // vaciar el arreglo
+       console.log("Historial limpio");
    }
 };
 
