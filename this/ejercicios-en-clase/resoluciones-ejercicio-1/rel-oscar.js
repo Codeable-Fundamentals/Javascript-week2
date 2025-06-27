@@ -10,13 +10,27 @@
 // Código base:
 const usuario = {
     // Completa aquí
+    nombre: "oscar",
+    email: "correodeoscar097@gmail.com",
+    edad: 25,
+    saludar() {
+        console.log(`Hola, soy ${this.nombre} y mi email es ${this.email}`);
+    },
+    cumplirAños() {
+        console.log(`${this.nombre} ahora tiene ${this.edad+1} años`);
+    },
+    cambiarEmail(nuevoEmail){
+        this.email = nuevoEmail;
+    }
 };
+
 
 // Pruebas
 usuario.saludar();
-usuario.cumplirAnios();
+usuario.cumplirAños();
 usuario.cambiarEmail("nuevo@email.com");
 usuario.saludar();
+
 
 // Hola, soy Juan y mi email es juan@email.com
 // Juan ahora tiene 26 años
