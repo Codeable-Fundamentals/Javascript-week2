@@ -52,6 +52,8 @@ const calculadora = {
    }
 };
 
+//
+
 // PRUEBAS - Ejecuta esto para verificar tu solución:
 console.log(calculadora.sumar(5, 3));
 console.log(calculadora.restar(10, 4));
