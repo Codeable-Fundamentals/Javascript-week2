@@ -24,6 +24,7 @@ const usuario = {
     }
 };
 
+
 // Pruebas
 usuario.saludar();
 usuario.cumplirAños();
