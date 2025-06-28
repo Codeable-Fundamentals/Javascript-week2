@@ -6,11 +6,11 @@ let animal = {
 }
 let perro = {
   raza: "''canino''",
-  ladrar: function() {
+  ladrar() {
     return "''guau guau''";
+
   }
 };
-
 perro.__proto__ = animal;
 
 console.log(perro.raza);      // "canino"
